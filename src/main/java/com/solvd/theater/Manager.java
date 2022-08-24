@@ -42,9 +42,11 @@ public class Manager {
         e.modifyLinkedList(employeeList, newEmployee);
         e.showLinkedList(employeeList);
     }
-    public void createCustomersList(){
+    public CustomLinkedList createCustomersList(){
         Customer c=new Customer();
-        c.showLinkedList(c.createLinkedList());
+        CustomLinkedList customerList=c.createLinkedList();
+        c.showLinkedList(customerList);
+        return customerList;
     }
     public void modifyCustomersList(CustomLinkedList customerList){
         Scanner sc=new Scanner(System.in);
