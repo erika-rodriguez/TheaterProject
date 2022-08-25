@@ -5,86 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561da7d2-7d6c-4713-838b-b9a28ea3c4a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Theater/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/Theater.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/.netbeans_update_resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/CustomLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/ILinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/IManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/IPerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/NotAValidPlayException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/NotAValidTheaterException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/NotAvailableSeatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/NotValidCategoryException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/NotValidInputException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Play.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/RandomBoolean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Seats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Show.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Theater.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/TheaterManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/build/classes/theater/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/private/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Artist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/ISeatsManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/IShow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/NotAValidPlayException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Play.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/RandomBoolean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Seats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Show.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Theater.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/TheaterManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/out/production/Theater/theater/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/CustomLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/ILinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/ILinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/IManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/IManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/IPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/NotAValidPlayException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/NotAValidPlayException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/NotAValidTheaterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/NotAValidTheaterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/NotAvailableSeatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/NotAvailableSeatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/NotValidCategoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/NotValidCategoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/NotValidInputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/NotValidInputException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/RandomBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/RandomBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Seats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Theater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/TheaterManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/TheaterManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theater/src/theater/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Theater/src/main/java/com/solvd/theater/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +26,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="054c803c-549b-44dd-b40b-135b80f19d3a" />
+        <option name="url" value="https://github.com/erika-rodriguez/TheaterProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -116,17 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Descargas/apache-log4j-2.18.0-bin/apache-log4j-2.18.0-bin/log4j-core-2.18.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Descargas/apache-log4j-2.18.0-bin/apache-log4j-2.18.0-bin/log4j-core-2.18.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30229884",
+    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="com.solvd.theater.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.theater.Main" />
