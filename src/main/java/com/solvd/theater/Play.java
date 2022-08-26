@@ -80,9 +80,10 @@ public class Play extends Show{
     
 
     public void readList(ArrayList<Play> list) {
-         for (int i = 0; i < list.size(); i++) {
-            System.out.println((i+1)+". "+"["+list.get(i).getShowName()+"] "+"Duration(min): "+list.get(i).getDuration());
-        }
+        list.forEach(l-> System.out.println("["+l.getShowName()+"] "+"Duration(min): "+l.getDuration()));
+//         for (int i = 0; i < list.size(); i++) {
+//            System.out.println((i+1)+". "+"["+list.get(i).getShowName()+"] "+"Duration(min): "+list.get(i).getDuration());
+//        }
     }
     public ArrayList <Play> modifyPlay(ArrayList <Play> playList, int option) {
         Scanner sc=new Scanner(System.in);

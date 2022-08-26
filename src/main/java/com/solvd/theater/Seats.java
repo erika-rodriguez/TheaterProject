@@ -6,7 +6,6 @@
 package com.solvd.theater;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -24,9 +23,7 @@ public class Seats {
         this.availableSeat = availableSeat;
         this.seatId = seatId;
     }
-   
 
-    
     //methods
     public static void createSeats(Theater t){
         ArrayList<Seats> seatsList=new ArrayList();
@@ -97,19 +94,7 @@ public class Seats {
 
 
     }
-//    public void Ocupation(int capacity){
-//        if (bookedSeats==capacity) {
-//            System.out.println("The theater has reached it's full capacity.");
-//        }
-//            else if (bookedSeats<capacity) {
-//                    System.out.println("There are "+freeSeats+" seats available");  
-//            }
-//            else  { 
-//                System.out.println("There is an oversale");
-//        }
-//    }
-    
-    //toString HashCode Equals
+
    
     //getters and setters
     public boolean isAvailableSeat() {

@@ -62,9 +62,10 @@ public class Theater {
     }
     
     public void readTheaters(ArrayList <Theater> theatersList){
-        for (int i = 0; i < theatersList.size(); i++) {
-            System.out.println((i+1)+". "+"["+theatersList.get(i).getTheaterName()+"] ");
-        }
+        theatersList.forEach(tl-> System.out.println("["+tl.getTheaterName()+"] "));
+//        for (int i = 0; i < theatersList.size(); i++) {
+//            System.out.println((i+1)+". "+"["+theatersList.get(i).getTheaterName()+"] ");
+//        }
     }
 
     public void checkAvailability(ArrayList<Seats> seatsList){
