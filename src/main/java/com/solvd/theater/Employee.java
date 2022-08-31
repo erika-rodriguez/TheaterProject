@@ -41,6 +41,7 @@ public class Employee implements IPerson,ILinkedList {
         this.email=email;
         this.phoneNumber=phoneNumber;
     }
+
     //Methods from IPerson
     @Override
     public String calculateCategory(LocalDate jobStartDate){
@@ -65,27 +66,46 @@ public class Employee implements IPerson,ILinkedList {
         }
         return category;
     }
+
     @Override
      public double calculateBenefits(String category) throws NotValidCategoryException{
-         double salary=1000;
-        if (category.equalsIgnoreCase("senior")) {
-              //System.out.println("Seniors get 50% salary increase.");
-              salary=1.5*salary;
-              //employee.set.salary
-        }else if (category.equalsIgnoreCase("semi senior")) {
-              //System.out.println("Semi Seniors get 30% salary increase.");
-              salary=1.3*salary;
-              //employee.set.salary
-        }else if (category.equalsIgnoreCase("junior")) {
-              //System.out.println("Juniors get 15% salary increase.");
-              salary=1.15*salary;
-              //employee.set.salary
-        }else if (category.equalsIgnoreCase("trainee")){
-              //System.out.println("Trainees do not have salary increase.");
-              //employee.set.salary
-        }else{
-            throw new NotValidCategoryException ("Please enter a valid Employee's category.");
-        }
+         double minSalary=1000;
+
+        IArithmeticLambda result = null;
+
+         switch (category){
+             case "senior":
+                 System.out.println("Seniors get 50% salary increase.");
+                 result=(double a, double b)->(a*b);
+                 salary=result.multiplication(1.5,minSalary);
+                 //salary=1.5*minSalary;
+                 //employee.set.salary
+                 break;
+             case "semi senior":
+                 System.out.println("Semi Seniors get 30% salary increase.");
+                 result=(double a, double b)->(a*b);
+                 salary=result.multiplication(1.3,minSalary);
+                 //salary=1.3*minSalary;
+                 //employee.set.salary
+                 break;
+             case "junior":
+                 System.out.println("Juniors get 15% salary increase.");
+                 result=(double a, double b)->(a*b);
+                 salary=result.multiplication(1.15,minSalary);
+                 //salary=1.15*minSalary;
+                 //employee.set.salary
+                 break;
+             case "trainee":
+                 System.out.println("Trainees do not have salary increase.");
+                 result=(double a, double b)->(a*b);
+                 salary=result.multiplication(1,minSalary);
+                 //salary=minSalary;
+                 //employee.set.salary
+                 break;
+             default:
+                 throw new NotValidCategoryException ("Please enter a valid Employee's category.");
+
+         }
         return salary;
     }
      
@@ -209,6 +229,8 @@ public class Employee implements IPerson,ILinkedList {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    }
+
+
+}
 
     

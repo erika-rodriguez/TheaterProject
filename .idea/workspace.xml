@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="561da7d2-7d6c-4713-838b-b9a28ea3c4a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Seats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/Theater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/TheaterManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/TheaterManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/theater/UserMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/theater/UserMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -46,6 +50,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="groupByToolId" value="true" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />

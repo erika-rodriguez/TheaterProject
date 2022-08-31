@@ -59,14 +59,22 @@ public class Main {
                 switch (option){
                     case 1:tm.createTheaters(tm);
                         break;
-                    case 2:tm.createPlays(tm);
+                    case 2:
+                        tm.createTheaters(tm);
+                        tm.searchTheater(tm.getTheaters());
                         break;
-                    case 3:tm.createTM(tm);
+                    case 3:tm.createPlays(tm);
+                        break;
+                    case 4:
+                        tm.createPlays(tm);
+                        tm.searchPlay(tm.getPlays());
+                        break;
+                    case 5:tm.createTM(tm);
                         logger.info("Enjoy the show!");
                         logger.info("-----------------------------------------");
                         break;
                 }
-            }while (option!=4);
+            }while (option!=6);
         }
         }
 }

@@ -6,7 +6,10 @@
 package com.solvd.theater;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,8 +20,8 @@ import org.apache.logging.log4j.Logger;
  * @author Erika92
  */
 public class TheaterManagement {
-    private ArrayList <Play> plays;
-    private ArrayList <Theater> theaters;
+    private List <Play> plays;
+    private List<Theater> theaters;
     private Ticket ticket;
 
     //constructors
@@ -96,7 +99,16 @@ public class TheaterManagement {
             throw new NotValidInputException("That is not a valid input.");
             }
     }
- 
+    public void searchPlay(List<Play> playList){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Search a Show:");
+        String search=s.next();
+        playList.stream()
+                .map(pl->pl.getShowName().toLowerCase())
+                .filter(p -> p.contains(search))
+                .collect(Collectors.toList())
+                .forEach(p -> System.out.println("Search result: "+p));
+    }
     public void createTheaters(TheaterManagement tm){
         Theater t= new Theater();
         tm.setTheaters(t.createTheaters(tm));
@@ -135,7 +147,16 @@ public class TheaterManagement {
 
 
     } 
-
+    public void searchTheater(List<Theater> theatersList){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Search a theater:");
+        String search=s.next();
+        theatersList.stream()
+                .map(tl->tl.getTheaterName().toLowerCase())
+                .filter(t -> t.contains(search))
+                .collect(Collectors.toList())
+                .forEach(t -> System.out.println("Search result: "+t));
+    }
     
     public void createSeatsList(Theater t){
         Seats.createSeats(t); 
@@ -179,19 +200,19 @@ public class TheaterManagement {
     //getters and setters
 
 
-    public ArrayList<Play> getPlays() {
+    public List<Play> getPlays() {
         return plays;
     }
 
-    public void setPlays(ArrayList<Play> plays) {
+    public void setPlays(List<Play> plays) {
         this.plays = plays;
     }
 
-    public ArrayList<Theater> getTheaters() {
+    public List<Theater> getTheaters() {
         return theaters;
     }
 
-    public void setTheaters(ArrayList<Theater> theaters) {
+    public void setTheaters(List<Theater> theaters) {
         this.theaters = theaters;
     }
 

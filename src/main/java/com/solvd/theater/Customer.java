@@ -5,11 +5,12 @@
  */
 package com.solvd.theater;
 
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -24,9 +25,9 @@ public class Customer implements IPerson, ILinkedList{
     private String category;//Kids, adult, senior
     private int age;
     private double ticketPrice;
-    
+
     //constructor
-    
+
     public Customer() {
     }
 
@@ -42,7 +43,7 @@ public class Customer implements IPerson, ILinkedList{
         this.email=email;
         this.phoneNumber=phoneNumber;
     }
-    
+
     //Getters from interface
     @Override
     public void setId(int id) {
@@ -107,9 +108,9 @@ public class Customer implements IPerson, ILinkedList{
     public void setTicketPrice(double ticketPrice) {
         this.ticketPrice = ticketPrice;
     }
-    
-    
-    
+
+
+
     //Methods from IPerson
     @Override
     public String calculateCategory(LocalDate dateOfBirth){
@@ -121,7 +122,7 @@ public class Customer implements IPerson, ILinkedList{
             if (age>59) {
                 category="Senior";
                 setCategory(category);
-                
+
             }else if (age>25) {
                 category="Adult";
                 setCategory(category);
@@ -135,7 +136,9 @@ public class Customer implements IPerson, ILinkedList{
         }
         return category;
      }
-   //The benefit is a discount on Ticket price
+
+
+    //The benefit is a discount on Ticket price
     @Override
      public double calculateBenefits(String category)throws NotValidCategoryException{
          double ticketPrice=100;
@@ -159,21 +162,21 @@ public class Customer implements IPerson, ILinkedList{
         }
          return ticketPrice;
     }
-     
+
     //Methods from ILinkedList
     @Override
     public CustomLinkedList createLinkedList(){
         System.out.println("==============Loading customers======================");
-        
+
         Customer c1=new Customer(01, "Kate Johnson", LocalDate.parse("1950-12-10"), "kjohnson@mail.com", "1145472");
         c1.setCategory(c1.calculateCategory(c1.getDateOfBirth()));
-        
+
         Customer c2=new Customer(02, "James Williams", LocalDate.parse("1967-07-06"), "jwilliams@mail.com", "1145811");
         c2.setCategory(c2.calculateCategory(c2.getDateOfBirth()));
-        
+
         Customer c3=new Customer(02, "Kim Bown", LocalDate.parse("1996-08-26"), "kbrown@mail.com", "114959");
         c3.setCategory(c3.calculateCategory(c3.getDateOfBirth()));
-        
+
         Customer c4=new Customer(02, "Cole Miller", LocalDate.parse("2021-12-07"), "cmiller@mail.com", "114959");
         c4.setCategory(c4.calculateCategory(c4.getDateOfBirth()));
         try{
@@ -189,11 +192,13 @@ public class Customer implements IPerson, ILinkedList{
         customerList.add(c1);
         customerList.add(c2);
         customerList.add(c3);
-        customerList.add(c4); 
-        
+        customerList.add(c4);
+
+        //customerList.stream().map(c->c.setTicketPrice(c.calculateBenefits(c.getCategory()))).collect(Collectors.toList())
+
         return customerList;
     }
-    
+
     @Override
     public void showLinkedList(CustomLinkedList customerList){
         System.out.println(customerList.toString());
@@ -202,7 +207,7 @@ public class Customer implements IPerson, ILinkedList{
     public void modifyLinkedList(CustomLinkedList customerList, Object newElement){
         Scanner sc=new Scanner(System.in);
         System.out.println("Insert position of new element:");
-        try{        
+        try{
             int position=sc.nextInt();
             customerList.add(position, newElement);
             System.out.println(customerList.toString());
@@ -210,19 +215,19 @@ public class Customer implements IPerson, ILinkedList{
             System.out.println("Out of bounds Exception.");
         }
     }
-    
+
     //toString
-    
+
     @Override
     public String toString() {
-        
-        return "Customer{" + ", customerId=" + customerId 
-                +"customersName=" + customersName 
-                + "\n dateOfBirth=" + dateOfBirth 
-                + "\n email=" + email 
-                + "\n phoneNumber=" + phoneNumber 
-                + "\n category=" + category 
-                + "\n age=" + age 
+
+        return "Customer{" + ", customerId=" + customerId
+                +"customersName=" + customersName
+                + "\n dateOfBirth=" + dateOfBirth
+                + "\n email=" + email
+                + "\n phoneNumber=" + phoneNumber
+                + "\n category=" + category
+                + "\n age=" + age
                 + "\n ticketPrice="+ticketPrice+'}'+"\n"+"\n";
     }
 

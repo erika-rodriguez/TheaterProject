@@ -6,7 +6,10 @@
 package com.solvd.theater;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -35,23 +38,26 @@ public class Theater {
         this.seatList = seatList;
     }
 
-    public  ArrayList <Theater> createTheaters(TheaterManagement tm){
+    public List <Theater> createTheaters(TheaterManagement tm){
         Theater t1=new Theater("Radio City", 10);
         Theater t2=new Theater("Apollo", 20);
         Theater t3=new Theater("Majestic", 30);
         Theater t4=new Theater("Lincoln", 40);
         Theater t5=new Theater("Broadway", 15);
 
-        ArrayList <Theater> theatersList=new ArrayList();
+        List <Theater> theatersList=new ArrayList();
         theatersList.add(t1);
         theatersList.add(t2);
         theatersList.add(t3);
         theatersList.add(t4);
         theatersList.add(t5);
+
+
+        //.map(c->c.setTicketPrice(c.calculateBenefits(c.getCategory()))).collect(Collectors.toList())
         return theatersList;
     }
 
-    public ArrayList <Theater> deleteTheater(ArrayList <Theater> theatersList, int option){
+    public List <Theater> deleteTheater(ArrayList <Theater> theatersList, int option){
         for (int i = 0; i < theatersList.size(); i++) {
             if (theatersList.get(i).getId()==option){
                 theatersList.remove(i);
@@ -61,12 +67,13 @@ public class Theater {
         return  theatersList;
     }
     
-    public void readTheaters(ArrayList <Theater> theatersList){
+    public void readTheaters(List<Theater> theatersList){
         theatersList.forEach(tl-> System.out.println("["+tl.getTheaterName()+"] "));
 //        for (int i = 0; i < theatersList.size(); i++) {
 //            System.out.println((i+1)+". "+"["+theatersList.get(i).getTheaterName()+"] ");
 //        }
     }
+
 
     public void checkAvailability(ArrayList<Seats> seatsList){
         Seats.checkAvailability(seatsList);
