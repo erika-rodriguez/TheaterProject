@@ -16,6 +16,14 @@ public class Main {
 
     public static void main(String[] args) {
         // TODO code application logic here
+//        //Multithreading test extending from Thread
+//        ThreadExtends t = new ThreadExtends(5);
+//        t.start();
+//        //Multithreading test implementing Runnable
+//        ThreadRunnable tr= new ThreadRunnable(5);
+//        Thread t2 = new Thread(tr);
+//        t2.start();
+
         Scanner s=new Scanner(System.in);
         logger.info("1. Enter as Admin");
         logger.info("2. Enter as User");
@@ -77,4 +85,5 @@ public class Main {
             }while (option!=6);
         }
         }
-}
+    }
+
